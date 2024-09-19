@@ -72,10 +72,13 @@
                         <tbody>
                             <%usuarios.forEach(function(usuario){%>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <th scope="row"><%=usuario._id%></th>
+                                <td><%=usuario.nome%></td>
+                                <td><%=usuario.email%></td>
+                                <td><%=usuario.foto%></td>
+                                <td>
+                                    <a href="/admin/usuarios/Detalhe/<%=usuario._id%>"> Detalhe</a>
+                                </td>
                             </tr>
                         <%})%>
                         </tbody>
