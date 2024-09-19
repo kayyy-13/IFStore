@@ -12,4 +12,4 @@ const Usuario = conexao.Schema({
     datanasc: { type: Date, default: Date.now },
 })
 
-export default conexao.model('Usuario',Usuario)
+export default conexao.model('usuario',Usuario)
